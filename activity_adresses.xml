@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.sacconnecte.Adresses">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Vos adresses"
+        android:id="@+id/textView2"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="40dp"
+        android:textColor="#009688"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adresse activée"
+        android:id="@+id/checkBox"
+        android:layout_gravity="center_horizontal"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adresse activée"
+        android:id="@+id/checkBox2"
+        android:layout_gravity="center_horizontal"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adresse activée"
+        android:id="@+id/checkBox3"
+        android:layout_gravity="center_horizontal"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adresse activée"
+        android:id="@+id/checkBox4"
+        android:layout_gravity="center_horizontal"
+        android:checked="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Enregistrer une nouvelle adresse de confiance"
+        android:id="@+id/textView4"
+        android:paddingLeft="20dp"
+        android:textSize="20dp"
+        android:textColor="#009688"
+        android:paddingTop="40dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/editText" />
+
+    <Button
+        android:id="@+id/buttonSaveAdresse"
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Enregistrer"
+        android:layout_marginTop="10dp"
+        android:layout_margin="5dp"
+
+        android:background="#90ed16"
+        android:textColor="#ECEFF1"
+
+        android:onClick="buttonSaveAdresse"
+        />
+
+    <Button
+        android:id="@+id/buttonRetour3"
+
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Retour au menu"
+
+
+        android:textColor="#ECEFF1"
+        style="@android:style/Widget.Material.Button.Colored"
+
+        android:onClick="buttonRetour3"
+        />
+
+</LinearLayout>

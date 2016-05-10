@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Entrer le mot de passe en cas de non reconnaissance d'empreinte digitale
+  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/backup_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="19dp"
+    android:paddingBottom="8dp"
+    android:orientation="vertical">
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Empreinte digitale non reconnue?"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_gravity="center"
+            android:textColor="#009688"
+            android:paddingTop="60dp"
+            />
+
+        <TextView
+            android:id="@+id/password_description"
+
+            android:paddingTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@android:style/TextAppearance.Material.Subhead"
+            android:text="Entrez votre mot de passe"
+
+            android:textColor="?android:attr/textColorSecondary"
+            android:layout_gravity="center_horizontal|top" />
+
+
+
+
+    <EditText
+        android:id="@+id/password"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="password"
+        android:imeOptions="actionGo"
+
+        android:layout_marginTop="36dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="40dp"
+
+        android:layout_below="@+id/description"
+        android:layout_alignStart="@+id/description" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <Button
+        android:id="@+id/buttonOpen"
+
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Deverrouillez moi ce sac"
+
+        android:background="#90ed16"
+        android:textColor="#ECEFF1"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+
+        android:onClick="buttonOpen"/>
+
+    <Button
+        android:id="@+id/buttonChangeCode"
+
+        android:layout_weight="1"
+        style="@android:style/Widget.Material.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Modifier votre mot de passe"
+        android:textColor="#ECEFF1"
+
+        android:layout_below="@+id/buttonOpen"
+
+        android:onClick="buttonChangeCode"
+         />
+
+    <Button
+        android:id="@+id/buttonRetour"
+
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Retour au menu"
+        android:layout_below="@id/buttonChangeCode"
+
+
+        style="@android:style/Widget.Material.Button.Colored"
+
+        android:textColor="#ECEFF1"
+        android:layout_alignParentBottom="true"
+
+        android:onClick="buttonRetour"
+        />
+    </LinearLayout>
+
+</LinearLayout>

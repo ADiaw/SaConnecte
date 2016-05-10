@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.sacconnecte.ModifierA"
+    android:orientation="vertical">
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Changer mon mot de passe"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center"
+        android:textColor="#009688"
+        android:paddingTop="60dp"
+        />
+
+    <TextView
+        android:id="@+id/password_description"
+
+        android:paddingTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.Material.Subhead"
+        android:text="Entrez votre mot de passe"
+
+        android:textColor="?android:attr/textColorSecondary"
+        android:layout_gravity="center_horizontal|top" />
+
+    <EditText
+        android:id="@+id/password"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:hint="Entrez le mot de passe"
+        android:imeOptions="actionGo"
+
+        android:layout_marginTop="36dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="40dp"
+
+        android:layout_below="@+id/description"
+        android:layout_alignStart="@+id/description" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <Button
+        android:id="@+id/buttonMP"
+
+        android:layout_weight = "1"
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Enregistrer mon mot de passe"
+
+        android:background="#90ed16"
+        android:textColor="#ECEFF1"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+
+        android:onClick="buttonOpen"
+        />
+
+    <Button
+        android:id="@+id/buttonDP"
+
+        android:layout_weight = "1"
+        style="@android:style/Widget.Material.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Retour a la derniere page"
+        android:textColor="#ECEFF1"
+
+        android:layout_below="@+id/buttonMP"
+
+        android:onClick="buttonDP"
+        />
+
+    <Button
+        android:id="@+id/buttonRetour4"
+
+        android:layout_weight = "1"
+        style="@android:style/Widget.Material.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Retour au Menu"
+        android:textColor="#ECEFF1"
+
+        android:layout_below="@+id/buttonDP"
+
+        android:onClick="buttonRetour4"
+        />
+
+    </LinearLayout>
+
+</LinearLayout>
