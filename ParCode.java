@@ -25,7 +25,7 @@ public class ParCode extends AppCompatActivity {
         });
         AlertDialog dialog = a_builder.create();
         LayoutInflater inflater = getLayoutInflater();
-        View dialogLayout = inflater.inflate(R.layout.empreintecontent,null);
+        View dialogLayout = inflater.inflate(R.layout.layouterror,null);
         dialog.setView(dialogLayout);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
 
