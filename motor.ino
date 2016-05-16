@@ -11,7 +11,7 @@ void setup() {                 //initiation des pins
   pinMode(motorPin3, OUTPUT);
   pinMode(motorPin4, OUTPUT);
 // nb d'etape a changer
-  for(int etape = 0; etape < 1024;etape ++){   //nb d'etape pour tourner 90 degres
+  for(int etape = 0; etape < 64;etape ++){   //nb d'etape pour tourner 90 degres
     
     digitalWrite(motorPin1, HIGH);
     digitalWrite(motorPin2, LOW);
